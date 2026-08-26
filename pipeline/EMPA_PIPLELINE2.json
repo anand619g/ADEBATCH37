@@ -1,5 +1,5 @@
 {
-	"name": "EMPA_PIPELINE",
+	"name": "EMPA_PIPLELINE2",
 	"properties": {
 		"activities": [
 			{
@@ -8,7 +8,7 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"waitTimeInSeconds": 500
+					"waitTimeInSeconds": 1
 				}
 			}
 		],
