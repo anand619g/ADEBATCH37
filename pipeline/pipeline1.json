@@ -1,0 +1,31 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://management.azure.com/subscriptions/9625ef7b-5eed-4303-befe-ac9b93b36ee2/resourceGroups/RG_Anand/providers/Microsoft.DataFactory/factories/DF-Batch372/pipelines/RESTAPI/createRun?api-version=2018-06-01",
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-08-31T04:19:42Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
